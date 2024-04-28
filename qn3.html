@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Button Color</title>
+<style>
+ 
+  .red-button {
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+
+<button id="colorButton" onclick="changeColor()">Change Color</button>
+
+<script>
+
+var clickCount = 0;
+
+function changeColor() {
+  
+  var button = document.getElementById("colorButton");
+  
+  
+  clickCount++;
+  
+    if (clickCount % 2 === 0) {
+    button.classList.add("red-button");
+  } else {
+        button.classList.remove("red-button");
+  }
+}
+</script>
+
+</body>
+</html>
